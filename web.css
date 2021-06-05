@@ -1,0 +1,101 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color:black;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+}
+#trangchu{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0%;
+}
+#side-bar {
+    background-color: rgb(10, 10, 54);
+    width: 10%;
+    height: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: goldenrod;
+    padding-left: 2%;
+}
+#selling{
+    width: 90%;
+    height: 100%;
+    background-color:rgb(24, 10, 56);
+
+}
+#title{
+    
+    margin-left: 40%;
+    font-size: 400%;
+    color: yellow;
+    
+}
+.box{
+    background-color: wheat;
+    height: 85%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#product{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#cateo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    padding: 2%;
+    color: gold;
+    font-size: 20px;
+}
+#search{
+    
+    width: 200px;
+    height:25%;
+    margin: 2%;
+    
+    
+}
+#ic{
+    padding: 2%;
+    color: gold;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

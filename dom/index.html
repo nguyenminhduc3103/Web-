@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: aqua;
+            width: 200px;
+            height: 100px;
+            display: flex;
+            flex-direction: row ;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+     <div id="box0" ></div>
+     <div id="box1" ></div>
+     <div id="box2" ></div>
+   </div>
+   <input id="search" type="text">
+   <button id="bn">Bamvaoday</button>
+
+   <script>
+        function changeColor(){
+            let id = document.getElementById("search").value
+            let box = document.getElementById(id)
+            box.style.backgroundColor = "blue"
+
+
+        }
+      //  document.getElementById("box").addEventListener("click",changeColur()) 
+        document.getElementById("btn").addEventListener("click",changeColor)
+    </script>
+</body>
+</html>
+ // thay vi nhap an vao  de doi mu

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="loading-pic" width="100%" height="500px"  alt="">
+    <div id="intro" style="text-align: center;">
+        <p id="lore"></p>
+    </div>
+    <div>
+        <p id="tags" style="text-align: center; font-size: 50px; color: rgba(0, 0, 0, 0.993);" > </p>
+    </div>
+    <div id="q" style="display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 5%;">
+        <img id="image-q" alt="">
+        <p id="spells-q1"></p>
+        <p id="spells-q2"></p>
+
+    </div>
+    <div id="w" style="display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 5%">
+        <img id="image-w" alt="">
+        <p id="spells-w1"></p> 
+        <p id="spells-w2"></p>
+    </div>
+    <div id="e" style="display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 5%">
+        <img id="image-e" alt="">
+        <p id="spells-e1"></p> 
+        <p id="spells-e2"></p>
+    </div>
+    <div id="r" style="display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 5%">
+        <img id="image-r" alt="">
+        <p id="spells-r1"></p> 
+        <p id="spells-r2"></p>
+    </div>
+    <div id="p" style="display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 5%">
+        <img id="image-p" alt="">
+        <p id="passive1"></p>   
+        <p id="passive2"></p>
+    </div>
+
+</body>
+<script>
+    let champ_data;
+    let queryString = window.location.search
+    const urlParams = new URLSearchParams(queryString);
+    champ_name = urlParams.get("champ")
+    // ?champ= 
+    console.log(champ_name)
+    document.addEventListener("DOMContentLoaded", async () => {
+        await fetch("http://ddragon.leagueoflegends.com/cdn/11.7.1/data/vn_VN/champion/" + champ_name+".json")
+        .then(async (res)=>{
+            await res.json().then((data)=>{
+                champ_data = data.data[champ_name]          
+            })
+        })
+        console.log(Object.keys(champ_data))
+        console.log(champ_data.spells[0].key)
+    document.getElementById("lore").textContent = champ_data.lore
+    document.getElementById("tags").textContent = champ_data.tags
+    console.log(champ_data.spells[0])
+    document.getElementById("spells-q1").textContent = champ_data.spells[0].name
+    document.getElementById("spells-q2").textContent = champ_data.spells[0].description
+    document.getElementById("spells-w1").textContent = champ_data.spells[1].name
+    document.getElementById("spells-w2").textContent = champ_data.spells[1].description
+    document.getElementById("spells-e1").textContent = champ_data.spells[2].name
+    document.getElementById("spells-e2").textContent = champ_data.spells[2].description
+    document.getElementById("spells-r1").textContent = champ_data.spells[3].name
+    document.getElementById("spells-r2").textContent = champ_data.spells[3].description
+    document.getElementById("passive1").textContent = champ_data.passive.name
+    document.getElementById("passive2").textContent = champ_data.passive.description
+
+    document.getElementById("image-q").src = "http://ddragon.leagueoflegends.com/cdn/11.6.1/img/spell/"+champ_data.spells[0].id+".png"
+    document.getElementById("image-w").src = "http://ddragon.leagueoflegends.com/cdn/11.6.1/img/spell/"+champ_data.spells[1].id+".png"
+    document.getElementById("image-e").src = "http://ddragon.leagueoflegends.com/cdn/11.6.1/img/spell/"+champ_data.spells[2].id+".png"
+    document.getElementById("image-r").src = "http://ddragon.leagueoflegends.com/cdn/11.6.1/img/spell/"+champ_data.spells[3].id+".png"
+    document.getElementById("loading-pic").src = "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + champ_name + "_0.jpg"
+    document.getElementById("image-p").src= "http://ddragon.leagueoflegends.com/cdn/11.7.1/img/passive/" + champ_data.passive.image.full
+    
+    
+   
+
+
+    
+    }) 
+    // console.log(data.data.Aatrox.lore)
+    
+</script>
+</html>

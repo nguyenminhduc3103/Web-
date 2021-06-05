@@ -1,0 +1,462 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    border-width: thick;
+
+}
+#Logo{
+    margin-top: 0.8%;
+    margin-left: 1.5%;
+    
+}
+#History{
+    color: wheat;
+    margin-top: 1.5%;
+    font-size: 23px;
+    text-shadow: 1px 1px 2px black, 0 0 10px yellow, 0 0 10px gold;
+    cursor: pointer;
+
+}
+#instruction{
+    color: wheat;
+    margin-top: 1.5%;
+    font-size: 23px;
+    text-shadow: 1px 1px 2px black, 0 0 10px yellow, 0 0 10px gold;
+    cursor: pointer;
+}
+#Res{
+    color: wheat;
+    margin-top: 1.5%;
+    font-size: 23px;
+    text-shadow: 1px 1px 2px black, 0 0 10px yellow, 0 0 10px gold;
+    cursor: pointer;
+
+}
+#Help{
+    color: wheat;
+    margin-top: 1.5%;
+    margin-right: 2%;
+    font-size: 23px;
+    text-shadow: 1px 1px 2px black, 0 0 10px yellow, 0 0 10px gold;
+    cursor: pointer;
+}
+img{
+    width: 45px;
+}
+#trangchu{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    margin-top: 1%;
+}
+#video1{
+    width: 90%;
+    height: 70%;
+    position: absolute;
+    top: 79px;
+    left: 65px;  
+}
+#video2{
+    width: 780px;
+    position: relative;
+    top: 27px;
+    left: 305px;
+    
+}
+#GT{
+    margin-top: 0%;
+    text-align: center;
+    background-color: black;
+    color: goldenrod;
+    font-size: 25px;
+    border-style: groove;
+    border-top-color: gold;
+    padding-top: 1%;
+
+}
+#Garena{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-width: 5px;
+    border-color:red;
+    border-style: solid;
+}
+#GAR {
+    width: 650px;
+    margin-left: 50px;
+}
+#GT2{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+}
+#BTgar{
+    width: 55px;
+    margin-top: 5%;
+    margin-left: 45%;
+}
+#Maps{
+ height: 750px;
+ margin-top: 1.5%;
+ background-color: black;
+}
+#smor{
+    display: flex;
+    flex-direction: column;
+}
+#ic1{
+    width: 50px;
+    position: center;
+    margin-left: 47.5%;
+    margin-top: 1%;
+}
+#GT3{
+    display: flex;
+    text-align: center;
+    width: 500px;
+    margin-left: 25%;
+    color: whitesmoke;
+    
+}
+#aram{
+    display: flex;
+    flex-direction: column;
+}
+#ic2{
+    width: 50px;
+    position: center;
+    margin-left: 47.5%;
+    margin-top: 1%;
+}
+#GT4{
+    display: flex;
+    text-align: center;
+    width: 650px;
+    margin-left: 18%;
+    color: whitesmoke;
+}
+#urf{
+    display: flex;
+    flex-direction: column;
+}
+#ic3{
+    width: 50px;
+    position: center;
+    margin-left: 47.5%;
+    margin-top: 1%;
+}
+#GT5{
+    display: flex;
+    text-align: center;
+    width: 600px;
+    margin-left: 20%;
+    color: whitesmoke;
+}
+#typechamp{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+#assas{
+    display: flex;
+    flex-direction: column;
+}
+#icon{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 1.5%;
+}
+#ic4{
+    width: 90px;
+}
+#video6{
+    display: flex;
+    flex-direction: row;
+}
+#vid61{
+    height: 550px;
+    width: 500px;
+    margin-right: 10%;
+}
+#vid62{
+    width: 600px;
+    height: 450px;
+    margin-left: 15%; 
+}
+#fight{
+    display: flex;
+    flex-direction: column;
+
+}
+#ic5{
+    width: 90px;
+}
+#video7{
+    display: flex;
+    flex-direction: row;
+}
+#vid71{
+    height: 550px;
+    width: 600px;
+    margin-right: 8%;
+}
+#vid72{
+    width: 600px;
+    height: 450px;
+    margin-left: 15%;
+}
+#mage{
+    display: flex;
+    flex-direction: column;
+
+}
+#ic6{
+    width: 90px;
+}
+#video8{
+    display: flex;
+    flex-direction: row;
+}
+#vid81{
+    height: 550px;
+    width: 600px;
+    margin-right: 8%;
+}
+#vid82{
+    width: 600px;
+    height: 450px;
+    margin-left: 15%;
+}
+#adc{
+    display: flex;
+    flex-direction: column;
+
+}
+#ic7{
+    width: 90px;
+}
+#video9{
+    display: flex;
+    flex-direction: row;
+}
+#vid91{
+    height: 550px;
+    width: 600px;
+    margin-right: 8%;
+}
+#vid92{
+    width: 600px;
+    height: 450px;
+    margin-left: 15%;
+}
+#sup{
+    display: flex;
+    flex-direction: column;
+
+}
+#ic8{
+    width: 90px;
+}
+#video10{
+    display: flex;
+    flex-direction: row;
+}
+#vid101{
+    height: 550px;
+    width: 600px;
+    margin-right: 8%;
+}
+#vid102{
+    width: 600px;
+    height: 450px;
+    margin-left: 15%;
+}
+#tank{
+    display: flex;
+    flex-direction: column;
+
+}
+#ic9{
+    width: 90px;
+}
+#video11{
+    display: flex;
+    flex-direction: row;
+}
+#vid111{
+    height: 550px;
+    width: 550px;
+    margin-right: 8%;
+}
+#vid112{
+    width: 600px;
+    height: 450px;
+    margin-left: 15%;
+}
+.TQ{
+    font-size: 17px;
+    margin-top: 0%;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+#amulet{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+#dra{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-left: 30%;
+}
+#GT12{
+    color: gold;
+    position: relative;
+    text-align: center;
+}
+#us{
+    background-color: goldenrod;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 500px;
+}
+  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+  /* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+  /* Number text (1/3 etc) */
+  
+  
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 30px;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+  /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+    
+}
+.slideshow-container1 {
+    width: 100%;;
+    /* position: relative;
+    margin: auto; */
+    height: 500px;
+    margin-bottom: 15%;
+}
+.dot1 {
+    cursor: pointer;
+    height: 0px;
+    width: 250px;
+    margin-bottom: 8%;
+    /* background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block; */
+    transition: background-color 0.6s ease;
+} 
+  
+/* .active, .dot1:hover {
+    background-color: #717171;
+} */
+.mySlides1 {display: none}
+.fade1 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade1 {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade1 {
+    from {opacity: .4} 
+    to {opacity: 1}
+}

@@ -1,0 +1,42 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+}
+img{
+    width: 45px;
+} 
+
+#lanes{
+    width: 400px;
+    margin-left: 5%;
+    margin-right: 20px;
+}
+#gtlane{
+    display: flex;
+    flex-direction: row;
+}
+#mon{
+    text-align: left;
+    margin-left: 5% ;
+}
+#creep{
+    width: 350px;
+}
+#inhibi{
+    width: 326px;
+}
+#pic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
